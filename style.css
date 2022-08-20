@@ -37,6 +37,53 @@ header .container{
     text-decoration: none;
 }
 
+.nav__link li a:hover{
+    color: rgb(211, 211, 211);
+    transition: 0.2s;
+}
+
 li{
     list-style: none;
+}
+
+
+@media (max-width: 991px) {
+    .nav__link{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+    }
+    
+    .burger::after,
+    .burger::before{
+        content: '';
+        background-color: #ffffff;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+    }
+    
+    .burger::before{
+        top: 0;
+    }
+    
+    .burger::after{
+        bottom: 0;
+    }
+    
+    .burger span{
+        position: absolute;
+        background-color: #ffffff;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        top: 9px;
+    }
 }
