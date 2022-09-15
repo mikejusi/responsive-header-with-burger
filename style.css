@@ -109,4 +109,18 @@ li{
         top: 9px;
         transition: all 0.3s ease 0s;
     }
+
+    header{
+        border-bottom: 1px solid white;
+    }
+
+    .active__panel{
+        display: grid;
+        position: absolute;
+        right: 0;
+        padding: 228px 10px 10px 10px;
+        background: #216652;
+        z-index: -1;
+        width: -webkit-fill-available;
+    }
 }
